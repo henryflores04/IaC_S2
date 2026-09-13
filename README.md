@@ -12,6 +12,9 @@ docker compose logs -f
 docker compose down
 # 5. Detener borrando los datos
 docker compose down -v
+# (No es obligatorio) en caso de que no se prenda alguna API (Me pasó en las pruebas) sin dar ningún error, ejecutar este
+docker compose up -d --scale api=3
+#
 --------------------------------------------------------------------------------------
 
 ## Respuestas teóricas
